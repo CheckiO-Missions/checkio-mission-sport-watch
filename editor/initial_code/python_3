@@ -1,19 +1,23 @@
-def soma(a,b):
+def verificar_sugestao(frequencia_cardiaca_repouso, frequencia_cardiaca_atual, capacidade_oxigenacao_atual):
     # escreva aqui seu código
     return None
 
 
 print("Example:")
-print(soma(3,2))
+print(verificar_sugestao(60, 190, 98))
 
 # As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
-# testa a função com números positivos como parâmetros
-assert soma(2, 3) == 5 
-    
-# testa a função com um número negativo como parâmetro
-assert soma(-1, 5) == 4
-    
-# testa a função com zero como parâmetro
-assert soma(0, 0) == 0
+# Caso em que a frequência cardíaca atual é maior que três vezes a frequência cardíaca em repouso
+assert verificar_sugestao(60, 190, 98) == 'diminuir'
+
+# Caso em que a capacidade de oxigenação atual é menor que 95
+assert verificar_sugestao(70, 140, 92) == 'diminuir'
+
+# Caso em que a frequência cardíaca atual é menor que duas vezes a frequência cardíaca em repouso
+# e a capacidade de oxigenação atual é maior que 97
+assert verificar_sugestao(70, 130, 98) == 'aumentar'
+
+# Caso em que nenhuma das condições é satisfeita
+assert verificar_sugestao(65, 155, 96) == 'manter'
     
 print("Seu código passou pelos testes, clique em Check para avançar!")
