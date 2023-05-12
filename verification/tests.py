@@ -11,7 +11,7 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": [60,90,98],
+            "input": [60,190,98],
             "answer": "diminuir"
         },
         {
