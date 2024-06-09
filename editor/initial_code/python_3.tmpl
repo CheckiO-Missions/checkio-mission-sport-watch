@@ -1,0 +1,23 @@
+{% comment %}New initial code template{% endcomment %}
+{% block env %}{% endblock env %}
+
+{% block start %}
+def pace_adjust(h1: int, h2: int, s: int) -> int:
+    # your code here
+    return 0
+{% endblock start %}
+
+{% block example %}
+print('Example:')
+print(pace_adjust(60, 180, 97))
+{% endblock %}
+
+# These "asserts" are used for self-checking
+{% block tests %}
+{% for t in tests %}
+assert {% block call %}pace_adjust({{t.input|p_args}}){% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
+{% endblock %}
+
+{% block final %}
+print("The mission is done! Click 'Check Solution' to earn rewards!")
+{% endblock final %}

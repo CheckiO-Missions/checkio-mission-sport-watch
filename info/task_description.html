@@ -1,40 +1,37 @@
 <!-- Describe task in general -->
+<p style="text-align: justify;">
+    A company is developing a new electronic watch for high-performance athletes. One of the features of the new watch is that it will measure the athlete's current heart rate (beats per minute) and current oxygenation capacity. The watch will also calculate and store the athlete's resting heart rate.
+</p>
 
-<p>Uma empresa está desenvolvendo um novo relógio eletrônico para atletas de alto desempenho. Uma das funcionalidades do novo relógio é que ele vai medir a frequência cardíaca atual (batidas do coração por minuto) e a capacidade de oxigenação atual do atleta. O relógio também vai calcular e armazenar a frequência cardíaca em repouso do atleta.</p>
-<p>Os projetistas querem que o relógio emita um aviso para o atleta de que ele ou ela deve:</p>
+<p style="text-align: justify;">
+    The designers want the watch to warn the athlete that he or she must:
+</p>
 <ul>
-    <li>diminuir o ritmo do exercício se a frequência cardíaca atual é maior do que três vezes a frequência cardíaca em repouso ou a capacidade de oxigenação atual é menor do que 95;</li>
-    <li>aumentar o ritmo do exercício se a frequência cardíaca atual é menor do que duas vezes frequência cardíaca em repouso e a capacidade de oxigenação atual é maior do que 97;</li>
-    <li>manter o ritmo de exercício se nenhuma das condições anteriores ocorrer.</li>
+    <li>slow down the pace of exercise if the current heart rate is more than three times the resting heart rate OR the current oxygenation capacity is less than 95;</li>
+    <li>increase the pace of exercise if the current heart rate is less than twice the resting heart rate AND the current oxygenation capacity is greater than 97;</li>
+    <li>maintain the pace of exercise if none of the above conditions occur.</li>
 </ul>
-<p>Dadas a frequência cardíaca em repouso, a frequência cardíaca atual e a capacidade de oxigenação atual obtidas pelo relógio, escreva um programa que produza a sugestão que o relógio deve emitir.</p>
+
+<p style="text-align: justify;">
+    Given the resting heart rate, the current heart rate and the current oxygenation capacity obtained by the watch, write a program that produces the suggestion that the Watch should emit.
+</p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada: </strong> A entrada é composta por três parâmetros, cada uma contendo um único número inteiro. O primeiro contém o inteiro R, a frequência cardíaca em repouso do atleta. O segundo contém o inteiro F, a frequência cardíaca atual do atleta. O terceiro contém o inteiro C, a capacidade de oxigenação atual do atleta.
+    <strong>Input:</strong> Three integers <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Saída: </strong> Seu programa deve produzir uma única linha, contendo uma única palavra, em letras minúsculas, que deve ser 'aumentar', 'diminuir', ou 'manter', de acordo com os critérios estabelecidos acima.
+    <strong>Output:</strong> Integer (slow down - -1, increase - 1, maintain - 0).
 </p>
 
 
 <!-- Put some usage examples -->
 <div class="for_info_only">
     <p>
-        <strong>Exemplo:</strong>
+        <strong>Examples:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">countConsecutiveSummers(42) == 4
-countConsecutiveSummers(99) == 6
-</pre>
-{% else %}
-<pre class="brush: python">verificar_sugestao(60, 190, 98) == 'diminuir'
-verificar_sugestao(70, 140, 92) == 'diminuir'
-verificar_sugestao(70, 130, 98) == 'aumentar'
-verificar_sugestao(65, 155, 96) == 'manter'
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 

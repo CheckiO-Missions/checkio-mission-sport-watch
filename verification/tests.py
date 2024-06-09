@@ -11,22 +11,22 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": [60,190,98],
-            "answer": "diminuir"
+            "input": [60, 190, 98],
+            "answer": -1,
         },
         {
-            "input": [70,140,92],
-            "answer": "diminuir"
+            "input": [70, 140, 92],
+            "answer": -1,
         },
         {
-            "input": [70,130,98],
-            "answer": "aumentar"
+            "input": [70, 130, 98],
+            "answer": 1,
         }
     ],
     "Extra": [
         {
-            "input": [65,155,96],
-            "answer": "manter"
+            "input": [65, 155, 96],
+            "answer": 0,
         },
     ]
 }
