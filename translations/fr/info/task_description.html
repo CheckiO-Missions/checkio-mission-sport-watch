@@ -1,0 +1,37 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Une entreprise développe une nouvelle montre électronique pour les athlètes de haut niveau. L'une des caractéristiques de la nouvelle montre est qu'elle mesure la fréquence cardiaque actuelle (battements par minute) et la capacité d'oxygénation actuelle de l'athlète. La montre calculera et enregistrera également la fréquence cardiaque au repos de l'athlète.
+</p>
+
+<p style="text-align: justify;">
+    Les concepteurs souhaitent que la montre avertisse l'athlète qu'il doit..:
+</p>
+<ul>
+    <li>ralentir le rythme de l'exercice si la fréquence cardiaque actuelle est plus de trois fois supérieure à la fréquence cardiaque au repos OU si la capacité d'oxygénation actuelle est inférieure à 95;</li>
+    <li>augmenter le rythme de l'exercice si la fréquence cardiaque actuelle est inférieure à deux fois la fréquence cardiaque au repos ET si la capacité d'oxygénation actuelle est supérieure à 97;</li>
+    <li>maintenir le rythme de l'exercice si aucune des conditions ci-dessus n'est remplie.</li>
+</ul>
+
+<p style="text-align: justify;">
+    Compte tenu de la fréquence cardiaque au repos, de la fréquence cardiaque actuelle et de la capacité d'oxygénation actuelle obtenues par la montre, écrivez un programme qui produit la suggestion que la montre devrait émettre.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Trois entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Entier (ralentir - -1, augmenter - 1, maintenir - 0).
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Exemples:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
