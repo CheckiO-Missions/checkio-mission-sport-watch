@@ -1,0 +1,37 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    一家公司正在为高性能运动员开发一种新型电子手表。新手表的功能之一是测量运动员当前的心率（每分钟心跳次数）和当前的氧合能力。手表还将计算并存储运动员的静息心率。
+</p>
+
+<p style="text-align: justify;">
+    设计者希望这款手表能提醒运动员必须：
+</p>
+<ul>
+    <li>如果当前心率超过静息心率的三倍，或当前氧合能力低于 95，则必须减慢运动速度；</li>
+    <li>如果当前心率小于静息心率的两倍，且当前氧合能力大于 97，则加快运动速度；</li>
+    <li>如果没有出现上述情况，则保持运动速度。</li>
+</ul>
+
+<p style="text-align: justify;">
+    给定手表获得的静息心率、当前心率和当前氧合容量，编写一个程序，生成手表应发出的建议。
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>三个整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>整数（减慢 --1，增加 -1，保持 -0）。
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>示例</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
