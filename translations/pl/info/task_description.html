@@ -1,0 +1,37 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Pewna firma opracowuje nowy zegarek elektroniczny dla wyczynowych sportowców. Jedną z cech nowego zegarka jest to, że będzie on mierzył aktualne tętno sportowca (uderzenia na minutę) i aktualną wydolność tlenową. Zegarek będzie również obliczał i przechowywał tętno spoczynkowe sportowca.
+</p>
+
+<p style="text-align: justify;">
+    Projektanci chcą, aby zegarek ostrzegał sportowca, że musi:
+</p>
+<ul>
+    <li>zwolnić tempo ćwiczeń, jeśli aktualne tętno jest ponad trzykrotnie wyższe od tętna spoczynkowego LUB aktualna wydolność tlenowa jest niższa niż 95;</li>
+    <li>zwiększyć tempo ćwiczeń, jeśli aktualne tętno jest mniejsze niż dwukrotność tętna spoczynkowego ORAZ aktualna wydolność tlenowa jest większa niż 97;</li>
+    <li>proszę utrzymać tempo ćwiczeń, jeśli żaden z powyższych warunków nie występuje.</li>
+</ul>
+
+<p style="text-align: justify;">
+    Biorąc pod uwagę tętno spoczynkowe, aktualne tętno i aktualną wydolność tlenową uzyskane przez zegarek, proszę napisać program, który wygeneruje sugestię, którą powinien wyemitować zegarek.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Dane wejściowe:</strong> Trzy liczby całkowite <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Liczba całkowita (zwolnienie - -1, zwiększenie - 1, utrzymanie - 0).
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Przykłady:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
