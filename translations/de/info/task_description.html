@@ -1,0 +1,37 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Ein Unternehmen entwickelt eine neue elektronische Uhr für Hochleistungssportler. Eines der Merkmale der neuen Uhr ist, dass sie die aktuelle Herzfrequenz (Schläge pro Minute) und die aktuelle Sauerstoffaufnahmekapazität des Sportlers misst. Die Uhr berechnet und speichert auch die Ruheherzfrequenz des Sportlers.
+</p>
+
+<p style="text-align: justify;">
+    Die Designer wollen, dass die Uhr den Sportler warnt, dass er oder sie es tun muss:
+</p>
+<ul>
+    <li>das Trainingstempo zu verlangsamen, wenn die aktuelle Herzfrequenz mehr als das Dreifache der Ruheherzfrequenz beträgt ODER die aktuelle Sauerstoffkapazität weniger als 95 beträgt;</li>
+    <li>das Trainingstempo erhöhen, wenn die aktuelle Herzfrequenz weniger als das Doppelte der Ruheherzfrequenz beträgt UND die aktuelle Sauerstoffkapazität größer als 97 ist;</li>
+    <li>behalten Sie das Trainingstempo bei, wenn keine der oben genannten Bedingungen erfüllt ist.</li>
+</ul>
+
+<p style="text-align: justify;">
+    Schreiben Sie angesichts der Ruheherzfrequenz, der aktuellen Herzfrequenz und der aktuellen Sauerstoffkapazität, die von der Uhr ermittelt wurden, ein Programm, das den Vorschlag erzeugt, den die Uhr ausgeben sollte.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Drei Ganzzahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Integer (Verlangsamen - -1, Erhöhen - 1, Beibehalten - 0).
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
